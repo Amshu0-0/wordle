@@ -1,0 +1,107 @@
+/* Main page layout and background setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f7f2e7; 
+    font-family: Arial, sans-serif; 
+    
+}
+
+/* Wrapper that holds everything */
+.container {
+    text-align: center; 
+   
+}
+
+/* The grid where all the word guess and rows are */
+.grid {
+    display: flex;
+    flex-direction: column; 
+    margin: 20px 0;
+    
+}
+
+/* Each row of cells in the grid */
+.row {
+    display: flex;
+    justify-content: center; 
+    
+}
+
+/* one cell that holds each letter */
+.cell {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    
+}
+
+.correct {
+    background-color: #AED581; /* Green */
+}
+
+.present {
+    background-color: #FFF176; /* Yellow */
+}
+
+.absent {
+    background-color: #EF9A9A; /* Red */
+}
+
+/* The on-screen keyboard section */
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+/* keys on the keyboard */
+.key {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.key.correct {
+    background-color: #AED581; /* Green */
+}
+
+.key.present {
+    background-color: #FFF176; /* Yellow */
+}
+
+.key.absent {
+    background-color: #EF9A9A; /* Red */
+}
+
+/* Area that has the play again button */
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    
+}
+
+/* play again button */
+#play-again {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    display: inline-block;
+    
+}
